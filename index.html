@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Loan Calculator</title>
   </head>
   <body class="bg-dark">
     <div class="container">
@@ -46,8 +46,64 @@
                     />
                   </div>
                 </div>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="years"
+                    placeholder="Years to repay"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    value="Calculate"
+                    class="btn btn-dark btn-block"
+                  />
+                </div>
               </div>
             </form>
+            <!-- Loader Here-->
+            <!-- <div id="loading">
+              <img src="img/loading.gif" alt="" />
+            </div> -->
+            <!--Results-->
+            <div>
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-text">Monthly Payment</div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="monthly-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-text">Total Payment</div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-text">Total Interest</div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-interest"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -69,5 +125,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
